@@ -1,4 +1,4 @@
-## How to Move a WordPress Site to a New Host
+## How to deploy WordPress Site to a Host
 
 1. Update the following parameters in your wp-config.php file
         
@@ -11,11 +11,11 @@ define('DB_USER', 'username_here');
 define('DB_PASSWORD', 'password_here');
 ```
 
-2. Export your database from your existing host
+2. Export your database from your localhost
 
-3. Create a MySQL database on your new host
+3. Create a MySQL database on your host
 
-4. Import your saved database into your new host
+4. Import your saved database into your host
 
 5. Update your MySQL database
 
@@ -28,7 +28,7 @@ UPDATE wp_posts SET post_content = replace(post_content, 'https://x.co.jp', 'htt
 UPDATE wp_postmeta SET meta_value = replace(meta_value,'https://x.co.jp','https://y.co.jp');
 ```
 
-6. Upload your website’s files to your new host
+6. Upload your website’s files to your host
 
 7. Log in your Administrator Dashboard and update the `PERMALINKS`
 
